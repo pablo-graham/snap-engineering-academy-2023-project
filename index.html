@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Real Madrid's Starting Squad</title>
+    <meta name="description" content="starting squad for next/current game">
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="scripts.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="field flex justify-center">
+        <div class="center-field">
+
+        <header class="main-header">
+            <h1 class="title text-center text-5xl my-4 font-mono">Real Madrid's Starting 11</h1>
+        </header>
+    <!--this div will put the players inside-->
+        <div id="starting-players" class="flex flex-wrap justify-center">
+        </div>
+        <div class="player" style="display: none;">
+            <div class="player-info text-xl font-serif">
+                <h3 class="playerName"></h3>
+                <ul>
+                    <li class="playerNumber"></li>
+                    <li class="playerPosition"></li>
+                </ul>
+            </div>
+        </div>
+         
+
+        <div class="footer">
+            <button class="btn text-base font-serif" onclick="subPlayer();">
+                substitute a player
+            </button>
+            <button class="btn text-base font-serif" onclick="removePlayer();">
+                take out a player
+            </button>
+        </div>
+
+        </div>
+        
+    </div>
+
+</body>
+
+</html>
